@@ -1,16 +1,40 @@
-This repo contains all the source examples from the book The Rules of Programming.
+# The Rules of Programming - Fixed Examples
 
-All of the examples will build and run, but they've received only cursory testing.
-I've left the testing code in place, if you're curious to see what actually was tested.
-I am entirely certain that there are still bugs in the code.
-If you bump into one and want to see it fixed, just send me a note.
+This repo contains all the source examples from the book The Rules of Programming, with fixes to make them compile successfully.
 
-The examples were built and tested with Visual Studio
-I've included the project files for VS; it should be trivial to incorporate them into some other build system.
+## Compilation Status
 
-Many of the examples are Potemkin code, so don't be surprised to find empty implementations of tantalizingly-named functions.
-A few of the examples might actually be useful, like the JSON struct unpacker in Chapter 16.
-My advice would be to not trust the code too much.
-Sure, it's had some light testing, but it hasn't been used in production.
-If you've read the book, you know what that means--it doesn't work, at least not perfectly.
+All examples in this repository have been updated to compile without errors. The following fixes were applied:
+- Fixed 32-bit vs 64-bit integer issues
+- Added missing `typename` keywords for template code
+- Included necessary headers (e.g., `<string>`)
+- Fixed various syntax errors and warnings
+
+## Building the Examples
+
+### Prerequisites
+- Make (for building all examples at once)
+- C++ compiler (tested with clang++ 19.x)
+
+### Compiling Individual Examples
+
+You can compile any individual rule example using your C++ compiler:
+
+```bash
+# Compile rule11 with dependencies
+clang++ main.cpp tests.cpp rule1.cpp -o rule1
+```
+
+### Building All Examples with Make
+
+A Makefile is provided to build all examples at once:
+
+```bash
+make
+./rules    # to run the compiled executable
+make clean # to remove compiled binaries
+```
+
+This will compile all `.cpp` files and link them into a single executable called `rules`.
+
 
