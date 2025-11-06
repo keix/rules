@@ -1,11 +1,12 @@
 
 #include <vector>
 #include <assert.h>
+#include <cmath>
+#include <cstdio>
 #include "tests.h"
 
 using namespace std;
 
-#pragma warning(disable: 4200)
 
 namespace rule3
 {

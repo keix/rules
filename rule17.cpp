@@ -1,6 +1,7 @@
 
 #include <vector>
 #include <assert.h>
+#include <cmath>
 #include "geom.h"
 #include "tests.h"
 

@@ -5,7 +5,6 @@
 #include <math.h>
 #include "assert.h"
 
-#pragma warning(disable: 26812)
 
 namespace geom
 {

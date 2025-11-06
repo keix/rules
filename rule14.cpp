@@ -4,11 +4,11 @@
 #include <algorithm>
 #include <queue>
 #include <assert.h>
+#include <climits>
 #include "tests.h"
 
 using namespace std;
 
-#pragma warning(disable: 4018)
 
 namespace rule14
 {

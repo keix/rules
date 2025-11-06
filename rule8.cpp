@@ -8,7 +8,6 @@
 
 using namespace std;
 
-#pragma warning(disable: 4018)
 
 namespace rule8
 {

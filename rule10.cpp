@@ -2,12 +2,13 @@
 #include <vector>
 #include <string>
 #include <assert.h>
+#include <cmath>
+#include <algorithm>
 #include "geom.h"
 #include "tests.h"
 
 using namespace std;
 
-#pragma warning(disable: 4244)
 
 namespace rule10
 {
@@ -222,7 +223,7 @@ namespace rule10
 			auto iter = find_if(
 							m_records.begin(),
 							m_records.end(),
-							[character](const Record & record) { return record.m_character == character; });
+							[character](const AwarenessManager::Record & record) { return record.m_character == character; });
 			if (iter != m_records.end())
 				return *iter;
 

@@ -1,6 +1,7 @@
 
 #include <vector>
 #include <assert.h>
+#include <cstdlib>
 #include "tests.h"
 
 using namespace std;

@@ -1,0 +1,9 @@
+{
+    "security": {
+        "blocked_servers": [
+            "www.espn.com",
+            "www.xkcd.com",
+            "www.brothers-brick.com"
+        ]
+    }
+}

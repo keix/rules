@@ -6,7 +6,6 @@
 
 using namespace std;
 
-#pragma warning(disable: 4477 4018 4305 4244)
 
 namespace rule7
 {
@@ -22,7 +21,7 @@ namespace rule7
 	{
 		void showAuthorRoyalties(const char * authorName, double amount)
 		{
-			printf("remit $%.2f to %s this quarter.\n", authorName, amount);
+			printf("remit $%.2f to %s this quarter.\n", amount, authorName);
 		}
 	};
 

@@ -2,10 +2,10 @@
 #include <vector>
 #include <regex>
 #include <assert.h>
+#include <cfloat>
 
 using namespace std;
 
-#pragma warning (disable: 4018 26451)
 
 namespace rule4
 {

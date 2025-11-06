@@ -5,11 +5,11 @@
 #include <fstream>
 #include <assert.h>
 #include <stdarg.h>
+#include <cstring>
 #include "tests.h"
 
 using namespace std;
 
-#pragma warning (disable: 4996)
 
 namespace rule12
 {
@@ -226,7 +226,7 @@ namespace rule12
 			va_start(args, format);
 
 			char error[1024];
-			vsprintf_s(error, format, args);
+			vsprintf(error, format, args);
 
 			m_errorCode = ErrorCode::Custom;
 			m_error = error;

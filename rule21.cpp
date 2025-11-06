@@ -2,11 +2,11 @@
 #include <vector>
 #include <string>
 #include <assert.h>
+#include <algorithm>
 #include "geom.h"
 
 using namespace std;
 
-#pragma warning (disable: 4018)
 
 namespace rule21
 {

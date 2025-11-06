@@ -1,11 +1,11 @@
 
 #include <vector>
 #include <assert.h>
+#include <cstring>
 #include "tests.h"
 
 using namespace std;
 
-#pragma warning (disable: 4018)
 
 namespace rule19
 {

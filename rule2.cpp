@@ -1,4 +1,4 @@
-
+#include <climits>
 #include <vector>
 #include <algorithm>
 #include <assert.h>
@@ -6,7 +6,6 @@
 
 using namespace std;
 
-#pragma warning(disable: 4018)
 
 namespace rule2
 {

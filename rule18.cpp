@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <assert.h>
+#include <climits>
 #include "tests.h"
 
 using namespace std;

@@ -1,4 +1,4 @@
-
+#include <cstdlib>
 #include <vector>
 #include <unordered_map>
 #include <assert.h>
@@ -6,7 +6,6 @@
 
 using namespace std;
 
-#pragma warning(disable:4018)
 
 namespace rule1
 {
@@ -182,7 +181,7 @@ namespace rule1
 
         protected:
 
-            Word getWord(int wordIndex) const
+            Word getWord(size_t wordIndex) const
             {
                 return (wordIndex < m_words.size()) ? m_words[wordIndex] : 0;
             }
@@ -258,12 +257,12 @@ namespace rule1
             {
                 if (leftIndex >= splitIndex)
                 {
-                    for (; rightIndex < cards.size(); ++rightIndex)
+                    for (; rightIndex < static_cast<int>(cards.size()); ++rightIndex)
                         shuffledCards.push_back(cards[rightIndex]);
 
                     break;
                 }
-                else if (rightIndex >= cards.size())
+                else if (rightIndex >= static_cast<int>(cards.size()))
                 {
                     for (; leftIndex < splitIndex; ++leftIndex)
                         shuffledCards.push_back(cards[leftIndex]);
@@ -356,7 +355,7 @@ namespace rule1
                     copyCards(&shuffledCards, cards, &rightIndex, cards.size());
                     break;
                 }
-                else if (rightIndex >= cards.size())
+                else if (rightIndex >= static_cast<int>(cards.size()))
                 {
                     copyCards(&shuffledCards, cards, &leftIndex, splitIndex);
                     break;
