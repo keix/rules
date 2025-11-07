@@ -22,7 +22,7 @@ You can compile any individual rule example using your C++ compiler:
 
 ```bash
 # Compile rule11 with dependencies
-clang++ main.cpp tests.cpp rule1.cpp -o rule1
+clang++ -std=c++17 main.cpp tests.cpp rule1.cpp -o rule1
 ```
 
 ### Building All Examples with Make

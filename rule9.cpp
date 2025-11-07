@@ -160,7 +160,7 @@ namespace rule9
 	namespace x5
 	{
 		template <class T, class D, class F>
-		D reduce(T begin, T end, D init, F func)
+		D myReduce(T begin, T end, D init, F func)
 		{
 			D accum = init;
 			for (auto iter = begin; iter != end; ++iter)
@@ -171,9 +171,9 @@ namespace rule9
 		}
 
 		template <class T, class D, class F>
-		D reduce(T & t, D init, F func)
+		D myReduce(T & t, D init, F func)
 		{
-			return reduce(t.begin(), t.end(), init, func);
+			return myReduce(t.begin(), t.end(), init, func);
 		}
 
 		int add(int a, int b)
@@ -185,7 +185,7 @@ namespace rule9
 		{
 			vector<int> values = { 1, 2, 3, 4 };
 
-			int sum = reduce(values, 0, add);
+			int sum = myReduce(values, 0, add);
 
 			return sum;
 		}
