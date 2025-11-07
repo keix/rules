@@ -23,6 +23,9 @@ You can compile any individual rule example using your C++ compiler:
 ```bash
 # Compile rule1 with dependencies
 clang++ -std=c++17 main.cpp tests.cpp rule1.cpp -o rule1
+
+# Some rules require geom.cpp (e.g., rule7)
+clang++ -std=c++17 main.cpp tests.cpp rule7.cpp geom.cpp -o rule7
 ```
 
 ### Building All Examples with Make
