@@ -21,7 +21,7 @@ All examples in this repository have been updated to compile without errors. The
 You can compile any individual rule example using your C++ compiler:
 
 ```bash
-# Compile rule11 with dependencies
+# Compile rule1 with dependencies
 clang++ -std=c++17 main.cpp tests.cpp rule1.cpp -o rule1
 ```
 
